@@ -1,0 +1,41 @@
+import java.awt.*;
+
+public class Character {
+
+    Color color;
+    int x, y, width, height, startingX, startingY;
+    double dx, dy;
+
+    boolean moveDown = false;
+
+    final int SPEED = 2;
+
+    public Character(Color color , int x, int y, int width, int height){
+        this.color = color;
+        this.x = x;
+        this.y = y;
+        startingX = x;
+        startingY = y;
+        this.width = width;
+        this.height = height;
+        dx = SPEED;
+        dy = SPEED;
+    }
+
+    public void setColor(Color color){
+
+        this.color = color;
+    }
+
+    public void setPosition(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public void paint(Graphics g){
+
+    }
+
+
+
+}
